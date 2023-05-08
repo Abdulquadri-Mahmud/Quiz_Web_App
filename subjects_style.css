@@ -1,0 +1,419 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********************* At the bigger screen **********************/
+:root{
+  --background-color:rgb(3, 58, 70);
+  --background: rgb(3, 58, 70);
+  --border-color:rgba(5, 112, 113, 1);
+  --color:#ffffff;
+  --color2: rgb(244, 247, 248);
+  --box-shadow: 3px 3px 5px rgb(2, 43, 53);
+  --box-shadow2: 3px 3px 5px rgb(1, 32, 38),
+  -3px -3px 5px rgb(2, 83, 101);
+}
+::-webkit-scrollbar{
+width: 0;
+}
+body{
+  background:var(--background);
+  font-family: 'Gemunu Libre', sans-serif;
+}
+.navCont{
+  height: 85px;
+  padding: 15px;
+  width: 100%;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .back_cont a{
+  text-decoration: none;
+ }
+ .back_cont > a > .back{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+ }
+ .back_cont > a > .back:hover{
+  border: 3px dashed var(--color);
+ }
+ .back_cont > a > .back > i {
+  color: var(--color);
+  font-size: 25px;
+ }
+ .subjectText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: var(--background);
+  box-shadow: var(--box-shadow2);
+}
+.subjectText p{
+  color: var(--color);
+  font-size: 2.3rem;
+  font-weight:500 ;
+}
+.packager{
+  display: none;
+  transition: all 2s;
+}
+.alert_cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vh;
+}
+.alert{
+  width: 80%;
+  height: 300px;
+  padding: 20px;
+  box-shadow: var(--box-shadow2);
+  position: relative;
+}
+.alert h1{
+  text-align: center;
+  color: var(--color);
+  font-size: 30px;
+  padding: 10px;
+  text-decoration: 3px underline var(--color);
+  font-weight: 500;
+}
+.alert h3{
+  color: var(--color);
+  text-align: start;
+  font-size: 22px;
+  font-weight: 500;
+}
+.alert .close_alert{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.alert .close_alert span{
+  color: var(--color);
+  padding: 0px 10px;
+  font-size: 20px;
+  animation: animate 0.3s linear alternate infinite;
+  opacity: 0;
+}
+@keyframes animate {
+  from{
+    opacity: 1;
+  }to{
+    opacity: 0;
+  }
+}
+.alert .close_alert i{
+  color: var(--color);
+  font-size: 20px;
+}
+.Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+.Wrapper{
+  width: 90%;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow2);
+  padding: 20px;
+  display: none; 
+}
+
+.timerCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timerWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  border-radius: 10px;
+  background-color: var(--background);
+  padding:15px;
+  box-shadow: var(--box-shadow2);
+}
+.timerWrapper p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0vh 1vh;
+  box-shadow: var(--box-shadow2);
+  height: 35px;
+  width: 45%;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: var(--background-color);
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--color);
+}
+.timerWrapper p span{
+  font-size: 13px;
+  margin-top: 2vh;
+}
+.remainQuestionCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3vh;
+}
+.remainQuestionWrap{
+  width: 40%;
+  border-radius: 10px;
+  background-color:var(--background);
+  box-shadow: var(--box-shadow2);
+}
+.remainQuestion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.remainQuestion p{
+  padding: 8px;
+  font-size:20px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.descriptionSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+.descriptionSec{
+  width: 90%;
+  background-color: var(--background);
+  box-shadow: var(--box-shadow2);
+  border-radius: 10px;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p.descript{
+  padding: 8px;
+  text-align: center;
+  color: var(--color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.questionCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.3vh;
+}
+.questionWrapper{
+  width: 95%;
+  border-radius: 10px;
+  background-color: var(--background);
+  box-shadow: var(--box-shadow2);
+}
+.question{
+  padding: 9px;
+  padding-top: 3vh;
+  text-align: center;
+  color: var(--color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.optionBtnsCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+.optionBtns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 10px;
+  width: 95%;
+  border-radius: 10px;
+  background-color: var(--background);
+  box-shadow: var(--box-shadow2);
+}
+.optionBtns > .optBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  width: 47%;
+  border: none;
+  border-radius: 10px;
+  color: var(--color);
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow2);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.optionBtns > button.optBtn:hover{
+  background-color: var(--background-2);
+  transform: translateY(-1px);
+}
+.nextPrevBtnCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+.nextPrevBtn{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.nextPrevBtn > button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  height: 40px;
+  width: 40%;
+  border: none;
+  border-radius: 10px;
+  color: var(--color);
+  padding:5px 35px 5px 35px;
+  background-color: var(--background);
+  box-shadow: var(--box-shadow2);
+  font-size: 16px;
+  font-weight: 790;
+  transition: all 0.2s;
+}
+.nextPrevBtn > button:nth-child(1):hover{
+  color: rgb(12, 12, 12);
+  transform: translateX(-5px);
+}
+.nextPrevBtn > button:nth-child(2):hover{
+  color: rgb(12, 12, 12);
+  transform: translateX(5px);
+}
+.startQuizCont {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+.startQuizWrapper{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 250px;
+  width: 70%;
+}
+.startQuizWrapper button{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 55px;
+  width: 60%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: var(--color);
+  box-shadow: var(--box-shadow2);
+  background-color: var(--background);
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.8s;
+  text-transform: uppercase;
+}
+.startQuizWrapper > button:hover{
+  color: #000;;
+  transform: translateY(-3px);
+}
+/* View User Score Design */
+
+.userScoreCont{
+  margin-top:-3rem;
+  display: none;
+}
+.userScoreCont .pack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userScoreWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: var(--background);
+}
+.userScoreWrap p{
+  padding: 0.5rem 0rem;
+  color: var(--color);
+  font-size: 20px;
+}
+
+.submitButtonCont{
+  display: none;
+  margin-top: 10rem;
+}
+.submitButtonWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submitButton{
+  width:250px;
+  height: 65px;
+  background-color:var(--background);
+  box-shadow: var(--box-shadow2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submitButton button#submitBtn{
+  width: 90%;
+  height: 50px;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow2);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: var(--color);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/********************* At the smaller screen 768px **********************/
+@media screen and (max-width:768px) {
+  
+}
+
+/********************* At the smaller screen 600px **********************/
+@media screen and (max-width:600px) {
+  .optionBtns > .optBtn{
+    width: 45%;
+  }
+}

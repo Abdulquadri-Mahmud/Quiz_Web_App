@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background: #fff;
+    --background-color:rgb(4, 90, 4);
+    --color:#dde1e7;
+}
+body{
+    background: #fff;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+.bg{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    clip-path: polygon(0 0, 75% 0%, 100% 49%, 75% 100%, 0% 100%);
+    position: absolute;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 500px;
+    position: relative;
+    margin-top: 12vh;
+}
+.wrapper1 .des1{
+    position: absolute;
+    /* top: ; */
+    left:0px;
+    height: 400px;
+    width: 140px;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: var(--background);
+}
+.wrapper1 .des2{
+    position: absolute;
+    right:0px;
+    height: 400px;
+    width: 140px;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: var(--background);
+}
+.wrapper{
+    height: 580px;
+    width: 370px;
+    background-color: var(--background);
+    border-radius: 10px;
+}
+.headerCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.header{
+    width: 90%;
+    height: 100px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+.header h1{
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color);
+}
+.header h3{
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color);
+    text-align: center;
+}
+.formCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    position: relative;
+}
+.form{
+    height: 350px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+form{
+    margin-top: 1.4rem;
+    padding: 15px;
+}
+
+.input{
+    padding: 2.3px 0px 0px 7px;
+    height: 35px;
+    width: 90%;
+    border-radius:6px;
+    background-color:var(--background);
+    margin: 14px;
+}
+.input label{
+    color: var(--background-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.input label input{
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.input label input::placeholder{
+    color: var(--background);
+    text-align: center;
+}
+.input label input#surnameText{
+    width: 175px;
+    height: 30px;
+    background-color:var(--background-color);
+}
+.input label input#nameText{
+    width: 209px;
+    height: 30px;
+    background-color:var(--background-color);
+}
+.input label input#emailText{
+    width: 212px;
+    height: 30px;
+    background-color:var(--background-color);
+}
+.input label input#passwordText{
+    width: 182px;
+    height: 30px;
+    background-color:var(--background-color);
+}
+.input label input#confirmPasswordText{
+    width: 123px;
+    height: 30px;
+    background-color:var(--background-color);
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    margin-top: 0.7rem;
+    height: 37px;
+    width: 100px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--background-color);
+    outline: none;
+    border: 2px solid var(--background-color);
+    border-radius: 0.4rem;
+}
+.textCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.textCont .textWrap{
+    width:200px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--background);
+}
+.textWrap h3{
+    color: var(--background-color);
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-size:1.4rem;
+    font-weight: 700;
+}
+.textWrap h2{
+    color: var(--background-color);
+    text-align: center;
+    font-size:1.4rem;
+    font-weight: 700;
+}
+.infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.4rem;
+}
+.infor p{
+    color: var(--background-color);
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.signUpCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4rem;
+}
+.signUpCont .signUpWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 120px;
+    background-color: var(--background-color);
+    border-radius: 6px;
+}
+.signUp{
+    width: 90%;
+    height: 28px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--background);
+}
+.signUp a{
+    color: var(--background-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+}

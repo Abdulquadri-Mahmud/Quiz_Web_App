@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abdul-Quadri Mahmud Adeyemi">
+  <meta name="title" content="Quiz Website">
+  <meta name="description" content="Quiz Website">
+  <meta name="keywords" content="Quiz Web Application">
+  
+  <link rel="icon" href="images/government.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300&family=Merriweather:ital@1&family=Montserrat:ital,wght@0,200;0,300;1,200;1,300&family=Oswald:wght@300;400;500;600&family=Raleway:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  
+  <title>Government Quiz Page</title>
+  
+  <link rel="stylesheet" href="subjects_style.css">
+
+  <script defer src="government.js"></script>
+  <script defer src="subjects_script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="navCont">
+        <div class="back_cont">
+          <a href="science-subject.html">
+            <div class="back">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+          </a>
+        </div>
+        <div class="subjectsTextCont">
+          <div class="subjectText">
+            <p>Government</p>
+          </div>
+        </div>
+      <div class="div">
+        
+      </div>
+    </div>
+  </header>
+  <div class="alert_cont">
+    <div class="alert">
+      <h1>Warning</h1>
+      <h3>Please don't ignore.<br>Once you click on start button make sure you don't create a new tab or minimize the quiz page.<br>Make sure you read on the description below very well after (5) five questions, and You're to finish all 20 questions in 10minutes.</h3>
+      <div class="close_alert">
+        <span>Close</span><i class="fas fa-times"></i>
+      </div>
+    </div>
+  </div>
+  <section class="Container">
+    <div class="Wrapper">
+      <div class="timerCont">
+        <div class="timerWrapper">
+          <p class="min">0:0 <span>Min</span></p>
+          <p class="sec">0:0 <span>Sec</span></p>
+          <p class="ms">0:0 <span>Milsec</span></p>
+        </div>
+      </div>
+      <div class="startQuizCont">
+        <div class="startQuizWrapper">
+          <button class="startQuizBtn">Start Quiz</button>
+        </div>
+      </div>
+      <div class="userScoreCont">
+        <div class="pack">
+          <div class="userScoreWrap">
+            <p>Score:<span class="score">0</span><span class="totalScore"> of 20</span></p>
+            <p>Percentage:<span class="percentage">0</span>%</p>
+          </div>
+        </div>
+      </div>
+      <div class="submitButtonCont">
+      <div class="submitButtonWrap">
+        <div class="submitButton">
+          <button id="submitBtn">Submit</button>
+        </div>
+      </div>
+      </div>
+      <div class="packager">
+        <div class="remainQuestionCont">
+          <div class="remainQuestionWrap">
+            <div class="remainQuestion">
+              <p>Question <span class="currentQuestion">1</span> of 20</p>
+            </div>
+          </div>
+        </div>
+        <div class="descriptionSection">
+          <div class="descriptionSec">
+            <p class="descript"></p>
+          </div>
+        </div> 
+        <div class="questionCont">
+          <div class="questionWrapper">
+            <div class="question"></div>
+          </div>
+        </div>
+        <div class="optionBtnsCont">
+          <div class="optionBtns">
+            <button class="optBtn optionA">A:Option</button>
+            <button class="optBtn optionB">B:Option</button>
+            <button class="optBtn optionC">C:Option</button>
+            <button class="optBtn optionD">D:Option</button>
+          </div>
+        </div>
+        <div class="nextPrevBtnCont">
+          <div class="nextPrevBtn">
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
